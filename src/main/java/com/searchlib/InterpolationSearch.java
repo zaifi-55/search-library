@@ -12,6 +12,15 @@ public class InterpolationSearch {
                 && key >= elemArray[low]
                 && key <= elemArray[high]) {
 
+            // Fix: if all remaining elements are equal, check directly
+            if (elemArray[low] == elemArray[high]) {
+                if (elemArray[low] == key) {
+                    r.index = low;
+                    r.found = true;
+                }
+                return;
+            }
+
             int pos = low + (((key - elemArray[low]) * (high - low))
                     / (elemArray[high] - elemArray[low]));
 
