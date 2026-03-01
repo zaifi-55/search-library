@@ -1,0 +1,4 @@
+com\searchlib\LinearSearch.class
+com\searchlib\BinSearch.class
+com\searchlib\InterpolationSearch.class
+com\searchlib\Result.class
