@@ -8,7 +8,7 @@ public class BinSearch {
         int mid;
         r.found = false;
         r.index = -1;
-
+        // search condition - sqe(for demo testing)
         while (bottom <= top) {
             mid = (top + bottom) / 2;
             if (elemArray[mid] == key) {
